@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "fermenthero": {
+      "type": "http",
+      "url": "https://api.fermenthero.com/mcp",
+      "extensions": {
+        "com.openai": {
+          "auth": {
+            "type": "mixed",
+            "client": {
+              "mode": "dcr"
+            }
+          }
+        }
+      }
+    }
+  }
+}

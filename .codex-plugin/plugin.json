@@ -1,0 +1,63 @@
+{
+    "name": "fermenthero",
+    "version": "1.3.0",
+    "description": "Find, create, edit, and schedule fermentation and baking recipes in FermentHero, with step-by-step planning that syncs to the FermentHero app.",
+    "author": {
+        "name": "Sopamo GmbH",
+        "email": "fermenthero@sopamo.de",
+        "url": "https://fermenthero.com"
+    },
+    "homepage": "https://fermenthero.com",
+    "keywords": [
+        "recipes",
+        "sourdough",
+        "fermentation",
+        "baking",
+        "meal planning"
+    ],
+    "skills": "./skills/",
+    "mcpServers": "./.mcp.json",
+    "interface": {
+        "displayName": "FermentHero",
+        "shortDescription": "Fermentation recipes & planner",
+        "longDescription": "FermentHero helps home bakers and fermenters find, write, and schedule recipes for sourdough bread, kimchi, sauerkraut, kombucha, kefir, yoghurt, hot sauce, and more.\n\nWhat you can do:\n- Search published FermentHero community recipes by name, ingredient, category, language, or difficulty, and read their ingredients and step-by-step procedures.\n- Open the FermentHero recipe and planner screens right in the conversation.\n- Turn your own notes or an idea into a structured FermentHero recipe, check it, and save it privately to your account.\n- Copy and adapt recipes while keeping the original author's attribution, and share your own recipes publicly when you choose to.\n- Schedule a recipe from a start or finish time in your timezone, see when each step happens, move a bake to another time, record step progress, and complete or cancel a bake. Plans and reminders sync with the FermentHero app.\n\nWho it is for: anyone who already uses FermentHero, and people who want to discover fermentation recipes. Browsing public recipes works without an account. Your own recipes and your planner require signing in to your FermentHero account.\n\nLimitations: Saving and editing your own recipes needs an account that includes recipe creation (FermentHero Plus). Some recipes are marked Plus; they open with Plus access or a free recipe unlock you already have. This plugin does not sell memberships or process payments. It cannot delete recipes or accounts; use the FermentHero app for that. Comments and photo uploads stay in the FermentHero app. Recipes are user-written; check food safety guidance for fermentation yourself.",
+        "developerName": "Sopamo GmbH",
+        "category": "Productivity",
+        "capabilities": [
+            "Search recipes",
+            "Read recipes",
+            "Create and edit recipes",
+            "Share recipes",
+            "Plan bakes",
+            "Track step progress"
+        ],
+        "websiteURL": "https://fermenthero.com",
+        "supportURL": "https://app.fermenthero.com/support",
+        "privacyPolicyURL": "https://app.fermenthero.com/gdpr",
+        "termsOfServiceURL": "https://app.fermenthero.com/tos",
+        "defaultPrompt": [
+            "Find an easy sourdough bread recipe on FermentHero.",
+            "Plan my FermentHero sourdough so it is ready on Saturday at 10 am.",
+            "Turn my sauerkraut notes into a FermentHero recipe and save it."
+        ],
+        "brandColor": "#F8961E",
+        "brandColorDark": "#F8961E",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png"
+    },
+    "extensions": {
+        "com.openai": {
+            "onboardingSkill": "./skills/setup/SKILL.md",
+            "publication": {
+                "countries": [],
+                "release_notes": "First directory release (1.3.0): search and read FermentHero recipes, open the FermentHero recipe and planner screens, create, validate, edit, copy, and share your own recipes, and schedule bakes with step times and progress that sync to the FermentHero app.",
+                "translations": {
+                    "de-DE": {
+                        "subtitle": "Fermentier-Rezepte & Planer",
+                        "description": "FermentHeld hilft beim Finden, Schreiben und Planen von Rezepten für Sauerteigbrot, Kimchi, Sauerkraut, Kombucha, Kefir, Joghurt, Hot Sauce und mehr.\n\nFunktionen:\n- Veröffentlichte Community-Rezepte nach Name, Zutat, Kategorie, Sprache oder Schwierigkeit suchen und Zutaten und Arbeitsschritte lesen.\n- Die FermentHeld-Rezept- und Planer-Ansichten direkt im Gespräch öffnen.\n- Eigene Notizen oder Ideen in ein strukturiertes Rezept verwandeln, prüfen und privat im eigenen Konto speichern.\n- Rezepte kopieren und anpassen, die ursprüngliche Urheberschaft bleibt erhalten; eigene Rezepte auf Wunsch öffentlich teilen.\n- Rezepte ab einer Start- oder Fertigzeit in deiner Zeitzone planen, Zeiten der Schritte sehen, verschieben, Fortschritt festhalten und abschließen oder abbrechen. Pläne und Erinnerungen werden mit der FermentHeld-App synchronisiert.\n\nÖffentliche Rezepte funktionieren ohne Konto. Eigene Rezepte und der Planer erfordern die Anmeldung mit deinem FermentHeld-Konto.\n\nEinschränkungen: Eigene Rezepte speichern und bearbeiten erfordert ein Konto mit Rezepterstellung (FermentHeld Plus). Plus-Rezepte öffnen sich mit Plus-Zugang oder einer vorhandenen kostenlosen Freischaltung. Das Plugin verkauft keine Mitgliedschaften und wickelt keine Zahlungen ab. Rezepte und Konten lassen sich hier nicht löschen."
+                    }
+                }
+            }
+        }
+    }
+}

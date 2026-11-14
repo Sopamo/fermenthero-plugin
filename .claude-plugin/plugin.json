@@ -1,0 +1,22 @@
+{
+  "name": "fermenthero",
+  "version": "1.3.0",
+  "description": "Find, create, edit, and plan fermentation recipes in FermentHero: sourdough, kimchi, kefir, kombucha and more.",
+  "author": {
+    "name": "Sopamo GmbH",
+    "email": "fermenthero@sopamo.de",
+    "url": "https://fermenthero.com"
+  },
+  "homepage": "https://fermenthero.com",
+  "repository": "https://github.com/Sopamo/fermenthero-plugin",
+  "license": "MIT",
+  "keywords": [
+    "recipes",
+    "fermentation",
+    "baking",
+    "sourdough",
+    "planner"
+  ],
+  "privacyPolicyUrl": "https://app.fermenthero.com/gdpr",
+  "icon": "./.claude-plugin/icon.png"
+}

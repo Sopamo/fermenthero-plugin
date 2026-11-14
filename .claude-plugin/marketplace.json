@@ -1,0 +1,20 @@
+{
+  "name": "fermenthero",
+  "owner": {
+    "name": "Sopamo GmbH",
+    "email": "fermenthero@sopamo.de"
+  },
+  "metadata": {
+    "description": "The FermentHero plugin for Claude."
+  },
+  "plugins": [
+    {
+      "name": "fermenthero",
+      "source": "./",
+      "description": "Find, create, edit, and plan fermentation recipes in FermentHero: sourdough, kimchi, kefir, kombucha and more.",
+      "version": "1.3.0",
+      "homepage": "https://fermenthero.com",
+      "license": "MIT"
+    }
+  ]
+}

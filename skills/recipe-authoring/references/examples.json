@@ -1,0 +1,255 @@
+{
+  "simple": {
+    "title": "Simple bread",
+    "description": "A basic example for learning the recipe format.",
+    "category": "bread",
+    "difficulty": "easy",
+    "language": "en-US",
+    "external_link": "",
+    "step_groups": [
+      {
+        "uuid": "main",
+        "title": null,
+        "ingredients": [
+          {
+            "amount": "500",
+            "name": "Flour",
+            "note": ""
+          },
+          {
+            "amount": "350",
+            "name": "Water",
+            "note": ""
+          },
+          {
+            "amount": "10",
+            "name": "Salt",
+            "note": ""
+          },
+          {
+            "amount": "5",
+            "name": "Yeast",
+            "note": ""
+          }
+        ],
+        "steps": [
+          {
+            "uuid": "mix",
+            "type": "action",
+            "duration": 10,
+            "description": "Mix and knead the ingredients."
+          },
+          {
+            "uuid": "rise",
+            "type": "wait",
+            "duration": 60,
+            "description": "Leave the dough to rise."
+          },
+          {
+            "uuid": "shape",
+            "type": "action",
+            "duration": 5,
+            "description": "Shape the loaf and place in a tin."
+          },
+          {
+            "uuid": "proof",
+            "type": "wait",
+            "duration": 45,
+            "description": "Leave to prove."
+          },
+          {
+            "uuid": "oven",
+            "type": "action",
+            "duration": 1,
+            "description": "Put the loaf in the prepared oven."
+          },
+          {
+            "uuid": "bake",
+            "type": "wait",
+            "duration": 40,
+            "description": "Bake at 220 °C until cooked through."
+          }
+        ]
+      }
+    ]
+  },
+  "parallel_groups": {
+    "title": "Bread with a preferment and soaked seeds",
+    "description": "A basic example for learning the recipe format.",
+    "category": "bread",
+    "difficulty": "easy",
+    "language": "en-US",
+    "external_link": "",
+    "step_groups": [
+      {
+        "uuid": "preferment",
+        "title": "Preferment",
+        "ingredients": [
+          {
+            "amount": "100",
+            "name": "Flour",
+            "note": ""
+          },
+          {
+            "amount": "100",
+            "name": "Water",
+            "note": ""
+          },
+          {
+            "amount": "1",
+            "name": "Yeast",
+            "note": ""
+          }
+        ],
+        "steps": [
+          {
+            "uuid": "preferment-mix",
+            "type": "action",
+            "duration": 5,
+            "description": "Mix the preferment."
+          },
+          {
+            "uuid": "preferment-rest",
+            "type": "wait",
+            "duration": 720,
+            "description": "Let the preferment mature."
+          }
+        ]
+      },
+      {
+        "uuid": "seeds",
+        "title": "Soaked seeds",
+        "ingredients": [
+          {
+            "amount": "50",
+            "name": "Seeds",
+            "note": ""
+          },
+          {
+            "amount": "75",
+            "name": "Water",
+            "note": ""
+          }
+        ],
+        "steps": [
+          {
+            "uuid": "seeds-mix",
+            "type": "action",
+            "duration": 2,
+            "description": "Combine seeds and water."
+          },
+          {
+            "uuid": "seeds-rest",
+            "type": "wait",
+            "duration": 120,
+            "description": "Soak the seeds."
+          }
+        ]
+      },
+      {
+        "uuid": "dough",
+        "title": "Main dough",
+        "ingredients": [
+          {
+            "group_uuid": "preferment"
+          },
+          {
+            "group_uuid": "seeds"
+          },
+          {
+            "amount": "400",
+            "name": "Flour",
+            "note": ""
+          },
+          {
+            "amount": "225",
+            "name": "Water",
+            "note": ""
+          },
+          {
+            "amount": "10",
+            "name": "Salt",
+            "note": ""
+          }
+        ],
+        "steps": [
+          {
+            "uuid": "dough-mix",
+            "type": "action",
+            "duration": 10,
+            "description": "Mix all ingredients with the prepared preferment and seeds."
+          },
+          {
+            "uuid": "dough-rest",
+            "type": "wait",
+            "duration": 90,
+            "description": "Let the dough rise."
+          },
+          {
+            "uuid": "dough-shape",
+            "type": "action",
+            "duration": 5,
+            "description": "Shape and place in a tin."
+          },
+          {
+            "uuid": "dough-proof",
+            "type": "wait",
+            "duration": 60,
+            "description": "Prove the loaf."
+          },
+          {
+            "uuid": "dough-oven",
+            "type": "action",
+            "duration": 1,
+            "description": "Place in the prepared oven."
+          },
+          {
+            "uuid": "dough-bake",
+            "type": "wait",
+            "duration": 40,
+            "description": "Bake at 220 °C until cooked through."
+          }
+        ]
+      }
+    ]
+  },
+  "non_gram_quantities": {
+    "title": "Quantity representation example",
+    "description": "A basic example for learning the recipe format.",
+    "category": "misc",
+    "difficulty": "easy",
+    "language": "en-US",
+    "external_link": "",
+    "step_groups": [
+      {
+        "uuid": "main",
+        "title": null,
+        "ingredients": [
+          {
+            "amount": null,
+            "name": "2 tbsp oil",
+            "note": ""
+          },
+          {
+            "amount": null,
+            "name": "60–80 g sugar",
+            "note": ""
+          },
+          {
+            "amount": "250",
+            "name": "Flour",
+            "note": ""
+          }
+        ],
+        "steps": [
+          {
+            "uuid": "combine",
+            "type": "action",
+            "duration": 5,
+            "description": "Combine the ingredients."
+          }
+        ]
+      }
+    ]
+  }
+}
